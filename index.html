@@ -94,18 +94,19 @@
       margin-bottom: 0.5rem;
       color: #004080;
     }
-    form {
-      margin-top: 2rem;
+   form {
+      margin: 1.5rem auto; /* centrado horizontal y separación vertical */
       background: #fff;
       padding: 1rem;
       border: 1px solid #ddd;
       border-radius: 8px;
-      max-width: 400px;
+      max-width: 480px; /* un poco más ancho para mejor apariencia */
       box-shadow: 0 2px 8px rgba(0,0,0,0.06);
+      box-sizing: border-box;
     }
     label {
       display: block;
-      margin-top: 1rem;
+      margin-top: 0.8rem; /* menos margen superior para coherencia */
       font-weight: 500;
       color: #004080;
     }
@@ -181,19 +182,19 @@
       <h2>Galería de Colima</h2>
 				<div class="galeria-grid">
 			<div>
-				<img src="volcan.jpg" alt="Volcán de Colima al atardecer">
+				<img src="volcan.jpg" alt="">
 				<div style="text-align:center; margin-top:0.5em; font-weight:500; color:#004080;">Volcán de Colima</div>
 			</div>
 			<div>
-				<img src="playa_santiago.jpg" alt="Playa Santiago en Manzanillo">
+				<img src="playa_santiago.jpg" alt="">
 				<div style="text-align:center; margin-top:0.5em; font-weight:500; color:#004080;">Playa Santiago</div>
 			</div>
 			<div>
-				<img src="museo.jpg" alt="Museo Regional de Historia de Colima">
+				<img src="museo.jpg" alt="">
 				<div style="text-align:center; margin-top:0.5em; font-weight:500; color:#004080;">Museo Regional de Historia</div>
 			</div>
 			<div>
-				<img src="jardin.jpg" alt="Jardín Libertad en el centro de Colima">
+				<img src="jardin.jpg" alt="">
 				<div style="text-align:center; margin-top:0.5em; font-weight:500; color:#004080;">Jardín Libertad</div>
 			</div>
 		</div>
@@ -202,38 +203,38 @@
 
     <section id="tabla">
       <h2>Datos turísticos</h2>
-      <table>
-        <caption>Tabla de atractivos turísticos y accesibilidad</caption>
-        <thead>
-          <tr>
-            <th>Lugar</th>
-            <th>Accesible en silla de ruedas</th>
-            <th>Señalización braille</th>
-          </tr>
-        </thead>
-        <tbody>
-          <tr>
-            <td>Volcán de Colima</td>
-            <td>No</td>
-            <td>No</td>
-          </tr>
-          <tr>
-            <td>Museo Regional</td>
-            <td>Sí</td>
-            <td>Sí</td>
-          </tr>
-          <tr>
-            <td>Playa Santiago</td>
-            <td>No</td>
-            <td>No</td>
-          </tr>
-          <tr>
-            <td>Jardín Libertad</td>
-            <td>Sí</td>
-            <td>No</td>
-          </tr>
-        </tbody>
-      </table>
+       <table>
+      <caption>Tabla de atractivos turísticos y accesibilidad</caption>
+      <thead>
+        <tr>
+          <th scope="col">Lugar</th>
+          <th scope="col">Accesible en silla de ruedas</th>
+          <th scope="col">Señalización braille</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <th scope="row">Volcán de Colima</th>
+          <td>No</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th scope="row">Museo Regional</th>
+          <td>Sí</td>
+          <td>Sí</td>
+        </tr>
+        <tr>
+          <th scope="row">Playa Santiago</th>
+          <td>No</td>
+          <td>No</td>
+        </tr>
+        <tr>
+          <th scope="row">Jardín Libertad</th>
+          <td>Sí</td>
+          <td>No</td>
+        </tr>
+      </tbody>
+    </table>
     </section>
 
    <section id="contacto">
@@ -260,4 +261,5 @@
 </body>
 
 </html>
+
 
